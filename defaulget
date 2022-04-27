@@ -1,0 +1,25 @@
+import java.util.*;
+  
+public class Map_cia {
+    public static void main(String[] args)
+    {
+        HashMap<String, "String"> map
+            = new HashMap<>();
+        map.put("1", "Puneet");
+        map.put("2", "Rjat" );
+        map.put("3", "Bhnau");
+        map.put("4", "Ajay");
+        System.out.println("HashMap:\n "
+                           + map.toString());
+        map.computeIfAbsent("5",
+                            k -> "Akaah");
+        map.computeIfAbsent("6",
+                            k -> "Sonal");
+        System.out.println("New HashMap:\n "
+                           + map);
+         int k = map.getOrDefault("7", "Akshita");
+  
+        
+        System.out.println("Returned Value: " + k);
+    }
+}
