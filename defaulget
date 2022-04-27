@@ -3,7 +3,7 @@ import java.util.*;
 public class Map_cia {
     public static void main(String[] args)
     {
-        HashMap<String, "String"> map
+        HashMap<String, String> map
             = new HashMap<>();
         map.put("1", "Puneet");
         map.put("2", "Rjat" );
@@ -17,7 +17,7 @@ public class Map_cia {
                             k -> "Sonal");
         System.out.println("New HashMap:\n "
                            + map);
-         int k = map.getOrDefault("7", "Akshita");
+         String k = map.getOrDefault("7", "Akshita");
   
         
         System.out.println("Returned Value: " + k);
